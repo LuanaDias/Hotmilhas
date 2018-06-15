@@ -1,0 +1,75 @@
+1.Escreva uma função que receba como parâmetros os coeficientes de uma equação
+de segundo grau e retorne suas raízes.
+
+<?php
+	function equacaosegundograu($a,$b,$c){
+	 	if (isset($a) && isset($b) && isset($c)){ 
+	 		if ($a != "" && $b != "" && $c != ""){	 
+				//Delta
+				$delta = ($b*$b)-4*$a*$c;
+				
+				//Bhaskara
+				$raiz = sqrt($delta);
+				
+				$x1 = (-$b+$raiz)/2*$a;
+				$x2 = (-$b-$raiz)/2*$a;
+				if ($delta < 0){
+				     echo "Não é possível calcular as raizes pois o valor de delta é negativo";			     
+				}else {   
+	 			    return $array = array($x1,$x2);
+				}
+	         }
+	     }
+	}
+?>
+<?php
+	//Testando a função
+	$result = equacaosegundograu(2,7,3);
+	print_r('X1 = '.$result[0]);
+	print_r('<br>X2 = '.$result[1]);
+?>
+ 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+2.Em Javascript, qual a diferença entre == e ===?
+
+R: O operador == verificar se o valores são iguais não verificando se o tipos são iguais já o operador === verifica se os valores são equivalentes
+   e verifica se realmente os valores são idênticos inclusive o tipo da variável 
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+3. Em PHP, escreva as classes necessárias para representar um estacionamento.
+
+R:Classes na pasta 3estacionamento
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+4.Qual o resultado do trecho de código a seguir:
+<?php
+class W {
+const XX = 12 + 30;
+}
+echo W::XX;
+
+R: O resultado do trecho é: 42
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+5. Em NodeJS existem threads?
+R:Sim existe uma ideia de uma unica thread no NodeJs onde funciona de forma assíncronano,no  nodejs se chama promises.
+Obs:Nunca trabalhei com o NodeJS minha reposta foi em cima de pesquisas.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+7. Escreva um sistema de enquetes que atenda aos seguintes requisitos:
+7.1. Cada enquete consiste de apenas uma pergunta de múltipla escolha
+7.2. É possível ter mais de uma enquete ativa ao mesmo tempo
+7.3. Deve ser possível saber qual usuário criou cada enquete
+7.4. Todas as enquetes são públicas
+
+R:Resolução na pasta 7enquete
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+8. Você já conhecia algum dos problemas apresentados nesta avaliação? De onde?
+
+R:Não conhecia nenhum
